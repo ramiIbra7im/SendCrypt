@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #16171d;
+}
+
+/* start header main */
+
+.header-main {
+    margin: 20px;
+}
+
+.header-main .continer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-main .continer h1 {
+    display: flex;
+    color: white;
+
+}
+
+.header-main .continer h1 span {
+    color: #ffc045;
+}
+
+.header-main .continer .links {
+    display: flex;
+    align-items: center;
+}
+
+.header-main .continer .links ul {
+    display: flex;
+    list-style: none;
+    color: #eee;
+}
+
+.header-main .continer .links ul li {
+    margin-inline: 20px;
+    position: relative;
+    cursor: pointer;
+
+
+
+}
+
+.header-main .continer .links ul li::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #ffc045;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+
+.header-main .continer .links ul li:hover::before {
+    width: 100%;
+}
+
+
+.header-main .continer .walet-connec {
+    padding: 15px;
+    background-color: #ffc045;
+    color: #16171d;
+    border-radius: 10px;
+}
+
+/* end header main */
+/* start tilte-main main */
+
+.tilte-main {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.tilte-main .continer .photo {
+    width: 500px;
+    height: 500px;
+    background-image: url(https://interexy.com/wp-content/uploads/2022/11/11-2@2x.png);
+    background-size: cover;
+}
+
+@media (max-width:767px) {
+    .tilte-main .continer .photo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tilte-main {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.tilte-main .continer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tilte-main .content {
+    width: 400px;
+}
+
+.tilte-main .content h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.tilte-main .content p {
+    color: #777;
+}
+
+.tilte-main .walet-connec {
+    margin-top: 30px;
+    width: fit-content;
+    padding: 15px;
+    background-color: #ffc045;
+    color: #16171d;
+    border-radius: 10px;
+}
+
+/* end tilte-main main */
+/* start cate */
+.cate {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.cate .cate-co {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cate .cate-co .cate1 {
+    border: 2px solid gainsboro;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cate .cate-co .cate1 i {
+    color: #ffc045;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.cate .cate-co .cate1 h3 {
+    color: white;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.cate .cate-co .cate1 p {
+    color: #777;
+}
+
+/* end cate */
+/* start input */
+.input-main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.input-main .photo {
+    width: 500px;
+    height: 500px;
+    background-image: url(https://interexy.com/wp-content/uploads/2022/11/11-2@2x.png);
+    background-size: cover;
+}
+
+.input-main .input-con {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.input-main .input-con .input-text {
+
+    background-color: #20242d;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.input-main .input-con .input-text form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.input-main .input-con .input-text form input {
+    margin-top: 20px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #16171d;
+    color: #777;
+
+}
+
+.input-main .input-con .input-text form input:last-child {
+    background-color: #ffc045;
+    margin-bottom: 10px;
+    color: #16171d;
+    border-radius: 10px;
+    width: 290px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.input-main .input-con .input-text form input:last-child:hover {
+    transform: translate(0%, 5%);
+    transition: 0.3s;
+    box-shadow: #36819a 0px -5px 20px -10px;
+}
+
+/* end input */
+/* start footer*/
+.footer {
+    margin-top: 50px;
+}
+
+.footer .footer-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+    align-items: center;
+}
+
+.footer .footer-con h1 {
+    color: white;
+}
+
+.footer .footer-con h1 span {
+    color: #ffc045;
+}
+
+.footer .footer-con .footer-icon {
+    font-size: 40px;
+
+    color: #777;
+}
+
+.footer .footer-con .footer-icon :hover {
+    transform: translate(10%, 10%);
+    color: #ffc045;
+    transition: 0.5s;
+
+
+}
+
+.footer .footer-con p {
+    color: #777;
+}
+
+
+
+.footer .footer-con p span a {
+    text-decoration: none;
+    color: #ffc045;
+}
+
+@media (max-width:767px) {
+    .footer .footer-con .footer-icon {
+        font-size: 15px;
+    }
+
+    .footer .footer-con p {
+        font-size: 10px;
+    }
+
+    .footer .footer-con {
+        margin: 5px;
+    }
+
+}
+
+/* end footer*/
